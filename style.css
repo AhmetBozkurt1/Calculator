@@ -1,1 +1,41 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.widthSet{
+    width: 25%;
+    border: 2px solid red;
+}
+.grayBtn{
+    background-color: #7F8487;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    padding: .8rem 0 1rem 0;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+.yellowBtn{
+    background-color: #E79E4F;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    padding: .8rem 0 1rem 0;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+}
+.darkBtn{
+    background-color: #413F42;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    padding: .8rem 0 1rem 0;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+}
+#no0{
+    width: 100%;
+    border-radius: 100px;
+}

@@ -72,6 +72,22 @@ ac.addEventListener("click",function(){
     $("#ac").text("AC")
 })
 
+document.querySelector("#artıEksi").addEventListener("click",function(){
+    let sayi=calcText.value
+    let artıEksi=sayi*-1
+    calcText.value=artıEksi
+})
+
+document.querySelector("#yuzde").addEventListener("click",function(){
+    let sayi=calcText.value
+    let yuzde=sayi/100
+    calcText.value=yuzde
+})
+document.querySelector("#nokta").addEventListener("click",function(e){
+    if(!calcText.value.includes(".")){
+        calcText.value+=e.target.innerHTML
+    }
+})
 
 
 

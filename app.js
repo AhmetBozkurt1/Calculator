@@ -19,20 +19,49 @@ document.querySelector(".calcNumber").addEventListener("click",function(e){
         calcText.value+=e.target.innerHTML;
         ac.innerHTML="C"
     }
-    if(e.target.id.includes("bölüm")){
-        sayi1=calcText.value
-        operation="bölüm"
+    
+    if(e.target.id.includes("bolum")){
+        sayi1=+calcText.value
+        operation="bolum"
+        calcText.value=""
+    }
+    else if(e.target.id.includes("carpım")){
+        sayi1=+calcText.value
+        operation="carpım"
+        calcText.value=""
+    }
+    else if(e.target.id.includes("eksi")){
+        sayi1=+calcText.value
+        operation="eksi"
+        calcText.value=""
+    }
+    else if(e.target.id.includes("topla")){
+        sayi1=+calcText.value
+        operation="topla"
         calcText.value=""
     }
 
     if(e.target.id.includes("eşit")){
-        if(operation==="bölüm"){
-            let sayi2=calcText.value
-            if (sayi2 !== 0) {
-                calcText.value = sayi1 / sayi2;
-            } else {
-                calcText.value = "Hata!";
+        if(operation==="bolum"){
+            let sayi2=+calcText.value
+            if(sayi2!==0) {
+                calcText.value=(sayi1/sayi2).toFixed(6)
             }
+            else{
+                calcText.value="Hata!";
+            }
+        }
+        else if(operation==="carpım"){
+            let sayi2=+calcText.value
+            calcText.value=sayi1*sayi2
+        }
+        else if(operation==="eksi"){
+            let sayi2=+calcText.value
+            calcText.value=sayi1-sayi2
+        }
+        else if(operation==="topla"){
+            let sayi2=+calcText.value
+            calcText.value=sayi1+sayi2
         }
     }
 });

@@ -12,9 +12,9 @@ let operation;
 
 document.querySelector(".calcNumber").addEventListener("click",function(e){
     if(e.target.className.includes("number")){
-//*burada if döndürmeyip direkt calcText="" yazsaydım sürekli içeriyi boşaltıp number ekleyecekti sayılar yan yana gelmeyecekti
-        if(calcText.value==0){
-            calcText.value ="";// Eğer sadece 0 varsa onu sil 
+        //*burada if döndürmeyip direkt calcText="" yazsaydım sürekli içeriyi boşaltıp number ekleyecekti sayılar yan yana gelmeyecekti
+        if(calcText.value==0 && e.target.innerHTML!=="."){
+            calcText.value ="";
         }
         calcText.value+=e.target.innerHTML;
         ac.innerHTML="C"

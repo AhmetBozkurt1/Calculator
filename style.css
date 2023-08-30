@@ -16,10 +16,12 @@
     border: none;
     color: white;
     font-size: 60px;
+/* alanda sayıların hesap makinelerinde olduğu gibi sağda gözükmesi için text-align özelliğini kullandım */
     text-align: right;
     padding: 1rem .8rem .8rem 1.3rem;
 }
 .calculation input:focus{
+/* input alanına tıkladığımda dışındaki çizgiyi götürmek için focus ile erişip outline kapatıyorum*/
     outline: none;
 }
 .grayBtn{
